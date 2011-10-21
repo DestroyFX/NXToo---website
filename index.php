@@ -34,13 +34,30 @@
     <link rel="shortcut icon" href="http://<?php echo $add ?>img/icone.ico" /> 
   </head>
   <body>
-    <header>
-   <img  src="img/logo05.png" alt="logo nxt" title="logo nxt" />
-  <!--    <h1>Gentoo + Funtoo = NXToo</h1> -->
-    </header>
-    <div id="content">
-   
+    
+ <div id="header">    
+<?php
+$nav = $_SERVER['HTTP_USER_AGENT'];
+
+if(preg_match("/Firefox/",$nav))
+{
+include 'logoanimation.xml';
+}
+elseif(preg_match("/Safari/",$nav) && preg_match("/Chrome/",$nav)) 
+{
+include 'logoanimation.xml';
+}
+else
+{
+echo  '<img  src="img/logo05.png" alt="logo nxt" title="logo nxt" />';
+}
+?> 
   
+ </div>   
+    
+    <div id="content">
+
+   
       <h2 class="ombrage1">The differences <span class="spefont">?</span></h2>
 
 <ul>
@@ -326,19 +343,14 @@
 
 	    </tbody>
 	</table>
-
-</div>
-
-    <div id="footer">
- 
-
+<div id="footer">
 <i>Interesting links</i><br/>
 <a title="Gentoo" href="http://www.gentoo.org">Gentoo</a> | <a title="Funtoo" href="http://www.funtoo.org">Funtoo</a> | <a title="Funtoo-Quebec" href="http://www.funtoo-quebec.org">Funtoo-Quebec</a> | <a title="GNU Project" href="http://www.gnu.org">GNU Project</a> | <a title="kernel" href="http://www.kernel.org">Linux Kernel</a><br/> | <a title="licence" href="http://www.gnu.org/copyleft/gpl.html">Under GNU GPL Licence</a>
 <br/>
 <i>Validations</i><br/>
 <a href='http://validator.w3.org/check?uri=http://<?php echo $add ?>'>HTML 5</a>|
 <a href='http://jigsaw.w3.org/css-validator/check/referer/validator?profile=css3'>CSS 3</a> 
-    
+ </div>  
     </div>
   </body>
 </html>
