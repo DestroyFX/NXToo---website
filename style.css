@@ -14,7 +14,6 @@
          url('fonts/birdman/birdman_-webfont.svg#BirdmanRegular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'KL1MonoCaseRegular';
@@ -25,18 +24,34 @@
          url('fonts/KL1/kl1monocase-webfont.svg#') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'XtraRegular';
+    src: url('fonts/xtra/xtra-webfont.eot');
+    src: url('fonts/xtra/xtra-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/xtra/xtra-webfont.woff') format('woff'),
+         url('fonts/xtra/xtra-webfont.ttf') format('truetype'),
+         url('fonts/xtra/xtra-webfont.svg#XtraRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
+
 
 .ombrage1 {
 	 text-shadow: 1px 1px 1px #666;
 	 color: #666;
-	 
-} 
+
+
+
+}
+
+
 
 .ombrage2 {
 	 border: 5px solid #777;
-    box-shadow: 8px 8px 12px #666; 
+    box-shadow: 4px 4px 6px #444; 
 } 
 
 h2 {
@@ -67,10 +82,6 @@ a {
 
 a img {
 	 border:  none ;
-
-}
-
-header{
 
 }
 
