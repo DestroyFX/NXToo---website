@@ -1,0 +1,26 @@
+  <svg xmlns="http://www.w3.org/2000/svg" height="180" width="700">
+ <text class="NXT" x="-200" y="150" font-family="BirdmanRegular" font-size="180" fill="#666">N
+<animateTransform attributeName="transform" attributeType="XML"
+           type="translate" from="0" to="250"
+           begin="0.25s" dur="0.5s" fill="freeze" />
+</text>
+
+ <text class="NXT" x="-200" y="150" font-family="BirdmanRegular" font-size="180" fill="#666">X
+<animateTransform attributeName="transform" attributeType="XML"
+           type="translate" from="0" to="400"
+           begin="0.5s" dur="0.5s" fill="freeze" />
+</text>
+
+ <text class="NXT" x="-200" y="150" font-family="BirdmanRegular" font-size="180" fill="#666" >T
+<animateTransform attributeName="transform" attributeType="XML"
+           type="translate" from="0" to="550"
+           begin="1s" dur="0.25s" fill="freeze" />
+</text>
+
+ <text id="oo" x="700" y="150" font-family="XtraRegular" font-size="90" fill="red">oo
+<animateTransform attributeName="transform" attributeType="XML"
+           type="translate" from="0" to="-250"
+           begin="1s" dur="0.25s" fill="freeze" />
+</text>
+</svg>
+
